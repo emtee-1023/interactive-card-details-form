@@ -1,0 +1,21 @@
+@use 'functions' as f;
+//breakpoints down
+
+//large screens:1599
+//desktop screens:1199 
+//tablet screens: 991
+//mobile screens (landscape): 767
+//mobile screens (portrait): 576px
+
+$breakpoints-down: (
+    'mobile-potrait': f.em(767),
+    'tablet': f.em(991),
+    'desktop': f.em(1199),
+    'large': f.em(1440),
+);
+
+@mixin breakpoints-down ($size) {
+    @media screen and (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}

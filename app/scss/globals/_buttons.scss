@@ -1,0 +1,23 @@
+@use '../util' as u;
+.btn {
+    background-color: var(--darkViolet);
+    width: 104%;
+    height: u.rem(70);
+    font-size: u.rem(24);
+    margin-top: u.rem(20);
+    color: var(--white);
+    border-radius: u.rem(10);
+    padding: u.rem(10);  
+
+}
+
+input[type="submit"] {
+    background-color: var(--darkViolet);
+    width: 104%;
+    height: u.rem(70);
+    font-size: u.rem(24);
+    margin-top: u.rem(20);
+    color: var(--white);
+    border-radius: u.rem(10);
+    padding: u.rem(10);
+}

@@ -1,0 +1,6 @@
+@use '../util' as u;
+
+h2 {
+    font-size: u.rem(16);
+    color: var(--darkViolet);
+}
