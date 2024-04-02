@@ -8,7 +8,8 @@
 
     @include u.breakpoints-down(small) {
         grid-template-rows: 30% 70%;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
+        
     }
     
     &__main {
@@ -22,6 +23,7 @@
         @include u.breakpoints-down(small) {
             grid-row: 2/3;
             grid-column: 1/2;
+            justify-content: flex-start;
         }
     
     }

@@ -5,7 +5,8 @@
     //display: none;
 
     @include u.breakpoints-down(small) {
-        width: 80%;
+        width: 85%;
+        margin-top: u.rem(130);
     }
 
     &__label {
