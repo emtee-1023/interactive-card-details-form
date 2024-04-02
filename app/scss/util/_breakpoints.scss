@@ -8,9 +8,8 @@
 //mobile screens (portrait): 576px
 
 $breakpoints-down: (
-    'mobile-potrait': f.em(767),
-    'tablet': f.em(991),
-    'desktop': f.em(1199),
+    'small': f.em(1200),
+    //'medium': f.em(1199),
     'large': f.em(1440),
 );
 

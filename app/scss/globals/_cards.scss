@@ -3,9 +3,11 @@
 .cards {
     position: absolute;
     top: 20%;
-    left: 10%;  
+    left: 10%;
+    width: u.rem(400);  
+    height: u.rem(370);
     
-    @include u.breakpoints-down(mobile-potrait) {
+    @include u.breakpoints-down(small) {
         top: 16%;
         left: 5%;
     }
@@ -19,30 +21,27 @@
     position: relative;
     top: 0;
     color: var(--white);
-    width: u.rem(400);
-    height: u.rem(200);
+    width: 80%;
+    height: 40%;
     padding: u.rem(20);
     border-radius: u.rem(10);
-    background-image: url(//images/bg-card-front.png);
+    background-image: url("/images/bg-card-front.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
-    @include u.breakpoints-down(mobile-potrait) {
+    @include u.breakpoints-down(small) {
         z-index: 2;
-        
     }
 
-
-
     &__logo {
-        margin-bottom: u.rem(50);
+        margin-bottom: u.em(35);
     }
 
     &__number {
-        margin-bottom: u.rem(20);
-        font-size: u.rem(30);
+        margin-bottom: u.em(15);
+        font-size: u.em(22);
         text-align: justify;
-        letter-spacing: u.rem(1.5);
+        letter-spacing: u.em(2);
         font-weight: normal;
     }
 
@@ -50,7 +49,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        letter-spacing: u.rem(2);
+        letter-spacing: u.em(2);
     }
 
     &__name {
@@ -61,25 +60,24 @@
 .card-back {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     left: u.rem(50);
-    bottom: u.rem(-50);
+    bottom: u.rem(-20);
     color: var(--white);
-    width: u.rem(400);
-    height: u.rem(200);
+    width: 80%;
+    height: 40%;
     padding: u.rem(20);
     border-radius: u.rem(10);
-    background-image: url(//images/bg-card-back.png);
+    background-image: url("/images/bg-card-back.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
-    @include u.breakpoints-down(mobile-potrait) {
+    @include u.breakpoints-down(small) {
         z-index: 1;
         top: -380px;
-        
     }
-
+    
     &__cvv {
         display: flex;
         flex-direction: row-reverse;
@@ -87,6 +85,6 @@
     }
 
     &__text {
-        margin-right: u.rem(30);
+        margin-right: 5%;
     }
 }

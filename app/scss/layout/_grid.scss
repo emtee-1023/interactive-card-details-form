@@ -6,7 +6,7 @@
     grid-template-rows: auto;
     grid-template-columns: 30% 70%;
 
-    @include u.breakpoints-down(mobile-potrait) {
+    @include u.breakpoints-down(small) {
         grid-template-rows: 30% 70%;
         grid-template-columns: auto;
     }
@@ -19,23 +19,24 @@
         align-items: center;
         justify-content: center;
 
-        @include u.breakpoints-down(mobile-potrait) {
+        @include u.breakpoints-down(small) {
             grid-row: 2/3;
             grid-column: 1/2;
         }
     
     }
+   
     &__aside {
         grid-column: 1/2;
         grid-row: 1/2;
-        background-image: url(//images/bg-main-desktop.png);
+        background-image: url("/images/bg-main-desktop.png");
         background-repeat: no-repeat;
         background-size: cover;
 
-        @include u.breakpoints-down(mobile-potrait) {
+        @include u.breakpoints-down(small) {
             grid-row: 1/2;
             grid-column: 1/2;
-            background-image: url(//images/bg-main-mobile.png);
+            background-image: url("/images/bg-main-mobile.png");
         }
 
     }
