@@ -191,7 +191,7 @@ input[type=submit] {
   color: var(--darkViolet);
   width: 100%;
   text-transform: uppercase;
-  font-size: medium;
+  font-size: 1.25em;
   letter-spacing: 0.0625em;
 }
 .form__input {
@@ -215,20 +215,20 @@ input[type=submit] {
 
 input::-moz-placeholder {
   color: var(--darkGrayViolet);
-  font-size: 1.25em;
+  font-size: 1.1875em;
   letter-spacing: 0.0625rem;
 }
 
 input::placeholder {
   color: var(--darkGrayViolet);
-  font-size: 1.25em;
+  font-size: 1.1875em;
   letter-spacing: 0.0625rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 1.5625rem;
   font-size: 0.625em;
 }
 

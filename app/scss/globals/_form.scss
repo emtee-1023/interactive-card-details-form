@@ -13,7 +13,7 @@
         color: var(--darkViolet);
         width: 100%;
         text-transform: uppercase;
-        font-size: medium;
+        font-size: u.em(20);
         letter-spacing: u.em(1);
     }
 
@@ -45,13 +45,13 @@
 
 input::placeholder {
     color: var(--darkGrayViolet);
-    font-size: u.em(20);
+    font-size: u.em(19);
     letter-spacing: u.rem(1);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: u.rem(10);
+    gap: u.rem(25);
     font-size: u.em(10);
 }
