@@ -6,8 +6,8 @@ document.querySelector('#name').oninput = () => {
     document.querySelector('.card-front__name').innerText = document.querySelector('#name').value;
 }
 
-document.querySelector('#cvc').oninput = () => {
-    document.querySelector('.card-front__cvc').innerText = document.querySelector('#cvc').value;
+document.querySelector('#cvv').oninput = () => {
+    document.querySelector('.card-back__cvv').innerText = document.querySelector('#cvv').value;
 }
 
 document.querySelector('#expiryMonth').oninput = () => {
